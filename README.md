@@ -1,4 +1,4 @@
-# Sistema de Gestión de Pacientes y Historias Clínicas
+# Sistema de Gestión de Pacientes - Historias Clínicas
 
 ## Trabajo Práctico Integrador - Programación 2
 
@@ -6,9 +6,9 @@
 
 | Nombre                    | Rol Principal | Responsabilidad Específica |
 |:--------------------------| :--- | :--- |
-| Gastón Armando Giorgio    | **Arquitecto de Software** | Diseño de la estructura en capas, decisiones tecnológicas y revisión de código. |
+| Matías Ariel Deluca       | **Arquitecto de Software** | Diseño de la estructura en capas, decisiones tecnológicas y revisión de código. |
 | Luciano Demian Contreras  | **DBA & DevOps** | Definición de scripts SQL (`01_create.sql`), gestión de la BD y la reproducibilidad del entorno. |
-| Matías Ariel Deluca       | **Backend (DAO/Service)** | Implementación de la lógica transaccional, patrones DAO y Service, y pruebas unitarias. |
+| Gastón Armando Giorgio    | **Backend (DAO/Service)** | Implementación de la lógica transaccional, patrones DAO y Service, y pruebas unitarias. |
 | Aldo Manfredi             | **UI de consola / QA** | Diseño de la interfaz (`MenuDisplay`), validación de entradas y ejecución de pruebas funcionales. |
 
 ### Descripción del Proyecto
