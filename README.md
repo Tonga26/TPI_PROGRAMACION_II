@@ -1,4 +1,4 @@
-# Sistema de Gestión de Pacientes y Historias Clínicas
+# Sistema de Gestión de Pacientes - Historias Clínicas
 
 ## Trabajo Práctico Integrador - Programación 2
 
