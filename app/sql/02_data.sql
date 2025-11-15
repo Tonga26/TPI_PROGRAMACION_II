@@ -1,6 +1,6 @@
 USE tpi_prog2;
 
--- 1. INSERCIÓN DE PACIENTES (10 REGISTROS)
+-- 1. INSERCIÓN DE PACIENTES 
 INSERT INTO paciente (nombre, apellido, dni, fecha_nacimiento)
 VALUES 
 ('Carlos', 'Perez', '30123456', '1985-05-15'),
@@ -15,7 +15,7 @@ VALUES
 ('Hugo', 'Flores', '39666777', '1970-06-18');
 
 
--- 2. INSERCIÓN DE HISTORIAS CLÍNICAS (10 REGISTROS CON OBSERVACIONES)
+-- 2. INSERCIÓN DE HISTORIAS CLÍNICAS 
 INSERT INTO historia_clinica (nro_historia, grupo_sanguineo, antecedentes, medicacion_actual, observaciones, paciente_id)
 VALUES
 ('HC-0001', 'A+', 'Alergia al polen.', 'Loratadina 10mg.', 'Seguimiento anual con especialista.', 1), 
