@@ -230,7 +230,7 @@ public class HistoriaClinicaDaoImpl implements HistoriaClinicaDao {
      *
      * @param pacienteId El ID del paciente cuya historia se eliminará.
      * @param c La conexión JDBC activa.
-     * @throws SQLException Si ocurre un error al ejecutar la baja lógica.
+     * @throws SQLException Si ocurre un error al ejecutar la baja lógica o si el registro no es encontrado.
      */
     @Override
     public void deleteByPacienteId(long pacienteId, Connection c) throws SQLException {
@@ -240,8 +240,11 @@ public class HistoriaClinicaDaoImpl implements HistoriaClinicaDao {
             ps.setLong(1, pacienteId);
 
             int affectedRows = ps.executeUpdate();
+
             if (affectedRows == 0) {
-                System.err.println("Advertencia: No se encontró Historia Clínica para el paciente ID: " + pacienteId);
+                // Si no se afectó ninguna fila, lanzamos una excepción
+                // para forzar el ROLLBACK en el PacienteServiceImpl.
+                throw new SQLException("Error de integridad: No se encontró Historia Clínica activa para el paciente ID: " + pacienteId);
             }
         }
     }
