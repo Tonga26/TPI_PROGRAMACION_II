@@ -19,7 +19,7 @@ public class PacienteDaoImpl implements PacienteDao {
 
     /**
      * Mapea el resultado de una fila del {@link ResultSet} a un objeto {@link Paciente} completo.
-     * Lee columnas de la tabla 'paciente' y las columnas aliadas de 'historia_clinica' (si existen).
+     * Lee columnas de la tabla 'paciente' y las columnas de 'historia_clinica' (si existen).
      *
      * @param rs El conjunto de resultados JDBC.
      * @return Un objeto Paciente con su Historia Clínica asociada si existe.
@@ -50,7 +50,7 @@ public class PacienteDaoImpl implements PacienteDao {
             java.sql.Date fApertura = rs.getDate("fecha_apertura");
             h.setFechaApertura(fApertura != null ? fApertura.toLocalDate() : null);
 
-            p.setHistoriaClinica(h);
+            p.setHistoriaClinica(h); // asigna la historia clinica al paciente
         }
 
         return p;
