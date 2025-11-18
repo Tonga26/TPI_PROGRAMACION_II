@@ -17,6 +17,9 @@ Este Trabajo Práctico Integrador (TPI) tiene como objetivo demostrar la aplicac
 
 El sistema permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre ambas entidades, implementando una arquitectura robusta, transacciones atómicas con JDBC y baja lógica (Soft Delete).
 
+### Documentación Adicional
+ENLACE A VIDEO: https://www.youtube.com/watch?v=jWxTnzhZ078
+
 ### Objetivos Académicos
 
 El desarrollo de este sistema permite aplicar y consolidar los siguientes conceptos clave de la materia:
@@ -212,10 +215,7 @@ config    |  Infraestructura     |   DatabaseConnection         |  Gestión de l
 
 - Baja Lógica: Ambas entidades (A y B) heredan el campo eliminado de la clase Base. Las consultas de lectura (readAll, read) filtran por eliminado=0.
 
-### 6. Documentación Adicional
-[ENLACE A VIDEO AQUÍ] 
-
-### 7. Tecnologías Utilizadas
+### 6. Tecnologías Utilizadas
 - Lenguaje: Java 17+
 - Build Tool: Gradle 8.12
 - Base de Datos: MySQL 8.0
